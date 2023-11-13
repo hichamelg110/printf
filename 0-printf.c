@@ -31,8 +31,7 @@ i++;
 }
 else if (*format == '%')
 {
-putchar('%')
-i++;
+putchar('%');
 }
 }
 else
@@ -43,3 +42,4 @@ putchar(*format);
 va_end(countargs);
 return(i);
 }
+
