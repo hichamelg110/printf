@@ -5,6 +5,7 @@
 int _printf(const char *format, ...)
 {
 
+
 int i = 0;
 va_list countargs;
 va_start(countargs, format);
@@ -12,6 +13,7 @@ va_start(countargs, format);
 for (; *format != '\0'; format++)
 {
 if (*format == '%')
+
 {
 format++;
 if(*format == 'c')
@@ -44,6 +46,7 @@ int intg = va_arg(countargs, int);
 i += printf("%i", intg);
 }
 }
+
 else
 {
 putchar(*format);
