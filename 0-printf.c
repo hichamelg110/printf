@@ -41,5 +41,5 @@ putchar(*format);
 }
 }
 va_end(countargs);
-i++;
+return(i);
 }
