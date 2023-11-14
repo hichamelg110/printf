@@ -10,6 +10,10 @@ int _printf2(const char *format, ...)
 int i = 0;
 int num = 0;
 va_list countargs;
+if (format == NULL || (format[0] == '%' && format[1] == '\0'))
+{
+return (-1);
+}
 va_start(countargs, format);
 for (; *format != '\0'; format++)
 {
