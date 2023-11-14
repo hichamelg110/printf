@@ -33,7 +33,7 @@ putchar(*format);
 i++;
 }
 }
-putchar('\n');
 va_end(countargs);
+putchar('\n');
 return (i);
 }

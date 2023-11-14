@@ -16,12 +16,7 @@ if (num == 0)
 putchar('0');
 return (1);
 }
-else if (num == INT_MIN)
-{
-putchar('-');
-counter++;
-num = -(num + 1);
-}
+
 else if(num < 0)
 {
 putchar ('-');
