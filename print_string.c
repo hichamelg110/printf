@@ -9,7 +9,7 @@ int print_string(char *str)
 {
 int i = 0;
 
-if (str == '\0')
+if (str == NULL)
 {
 break;
 }
