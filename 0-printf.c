@@ -11,6 +11,7 @@ int i = 0;
 if (format == NULL || !format || !format[0])
 {
 return (-1);
+}
 va_start(countargs, format);
 for (; *format != '\0'; format++)
 {
