@@ -4,18 +4,15 @@
  * @format: format string
  * Return: the number of characters printed
  */
-
 int _printf(const char *format, ...)
 {
 va_list countargs;
 int i = 0;
-
 if (format == NULL)
 {
 return (-1);
 }
 va_start(countargs, format);
-
 for (; *format != '\0'; format++)
 {
 if (*format == '%')
