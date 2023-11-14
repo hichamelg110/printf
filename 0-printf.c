@@ -8,7 +8,7 @@ int _printf(const char *format, ...)
 {
 va_list countargs;
 int i = 0;
-if (format == NULL || !format || !format[0])
+if (format == NULL || (format[0] == '%' && format[i] == '\0'))
 {
 return (-1);
 }
