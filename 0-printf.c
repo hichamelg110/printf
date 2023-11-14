@@ -7,13 +7,13 @@
 
 int _printf(const char *format, ...)
 {
+va_list countargs;
 int i = 0;
 
 if (format == NULL)
 {
 return (-1);
 }
-va_list countargs;
 va_start(countargs, format);
 
 for (; *format != '\0'; format++)
@@ -46,7 +46,6 @@ else
 putchar(*format);
 i++;
 }
-format++;
 }
 va_end(countargs);
 return (i);
