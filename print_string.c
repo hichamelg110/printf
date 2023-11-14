@@ -1,22 +1,21 @@
-/**
- *print_string - function print string
- *@str : string
- *Return: number character
- */
-
-
-#include "main.h"
-int print_string(char *str)
+else if (*format == 's')
 {
-int i = 0;
-if (str == NULL)
-{
-str = "(null)";
+char *str = va_arg(countargs, char*);
+i += print_string(str);
 }
-for (; *str != '\0'; str++)
+else if (*format == '%')
 {
-putchar(*str);
+putchar('%');
+}
+}
+else
+{
+putchar(*format);
 i++;
 }
+}
+va_end(countargs);
 return (i);
 }
+
+
