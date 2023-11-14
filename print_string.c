@@ -8,7 +8,7 @@
 #include "main.h"
 int print_string(char *str)
 {
-int i;
+int i = 0;
 if (str == NULL)
 {
 str = "(null)";
