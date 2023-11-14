@@ -31,6 +31,7 @@ i += print_string(str);
 else if (*format == '%')
 {
 putchar('%');
+i++;
 }
 else if (*format == 'd' || *format == 'i')
 {
@@ -43,7 +44,13 @@ putchar(*format);
 i++;
 }
 }
+else
+{
+putchar(*format);
+i++;
 }
+}
+
 va_end(countargs);
 return (i);
 }

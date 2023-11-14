@@ -11,7 +11,7 @@ int i = 0;
 
 if (str == NULL)
 {
-break;
+return (-1);
 }
 for (; *str != '\0'; str++)
 {
