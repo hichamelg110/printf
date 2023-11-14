@@ -6,12 +6,11 @@
  */
 int _printf(const char *format, ...)
 {
-va_list countargs; int i = 0;
-if (format == NULL)
+va_list countargs;
+int i = 0;
+if (format == NULL || !format || !format[0])
 {
-write(1, "(null)", 6);
-return (6);
-}
+return (-1);
 va_start(countargs, format);
 for (; *format != '\0'; format++)
 {
