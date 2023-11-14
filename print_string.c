@@ -1,11 +1,10 @@
+#include "main.h"
 /**
  *print_string - function print string
  *@str : string
  *Return: number character
  */
 
-
-#include "main.h"
 int print_string(char *str)
 {
 int i = 0;
