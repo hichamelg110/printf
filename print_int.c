@@ -17,7 +17,7 @@ putchar('0');
 return (1);
 }
 
-else if(num < 0)
+else if (num < 0)
 {
 putchar ('-');
 counter++;
