@@ -8,7 +8,7 @@
 int print_string(char *str)
 {
 int i = 0;
-char null_str = "(null)";
+char *null_str = "(null)";
 if (str == NULL)
 {
 str = null_str;
