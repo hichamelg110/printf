@@ -27,13 +27,7 @@ i++;
 else if (*format == 's')
 {
 char *str = va_arg(countargs, char*);
-if(str == NULL)
-{str = "(null)";}	
-for (; *str != '\0'; str++)
-{
-putchar(*str);
-i++;
-}
+i += print_string(str);
 }
 else if (*format == '%')
 {
