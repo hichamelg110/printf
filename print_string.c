@@ -3,11 +3,12 @@
  *@str : string
  *Return: number character
  */
-#include <stdio.h>
-#include <string.h>
+
+
 #include "main.h"
 int print_string(char *str)
 {
+int i;
 if (str == NULL)
 {
 str = "(null)";
