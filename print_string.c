@@ -8,9 +8,10 @@
 int print_string(char *str)
 {
 int i = 0;
+char null_str = "(null)";
 if (str == NULL)
 {
-str = "(null)";
+str = null_str;
 }
 for (; *str != '\0'; str++)
 {
