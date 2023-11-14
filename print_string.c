@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *print_string - function print string
+ *print_string - a function that print string
  *@str : string
  *Return: number character
  */
