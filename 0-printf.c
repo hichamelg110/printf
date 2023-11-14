@@ -44,7 +44,9 @@ putchar('%');
 else
 {
 putchar(*format);
+i++;
 }
+format++;
 }
 va_end(countargs);
 return (i);
