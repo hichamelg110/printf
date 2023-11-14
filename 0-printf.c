@@ -4,8 +4,8 @@
  * @format: format string
  * Return: the number of characters printed
  */
-int _printf(const char *format, ...)
-{
+int _printf(const char *format, ...){
+int num = 0;
 va_list countargs;
 int i = 0;
 if (format == NULL || (format[0] == '%' && format[1] == '\0'))
@@ -18,8 +18,7 @@ for (; *format != '\0'; format++)
 if (*format == '%')
 {
 format++;
-if (*format == 'c')
-{
+if (*format == 'c'){
 char c = va_arg(countargs, int);
 putchar(c);
 i++;
@@ -33,11 +32,16 @@ else if (*format == '%')
 {
 putchar('%');
 }
+else if (*format == 'd' || *format == 'i')
+{
+num = va_arg(countargs, int);
+i+= print_number(num);
 }
 else
 {
 putchar(*format);
 i++;
+}
 }
 }
 va_end(countargs);
