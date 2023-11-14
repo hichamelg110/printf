@@ -29,6 +29,12 @@ else if (*format == 's')
 char *str = va_arg(countargs, char*);
 i += print_string(str);
 }
+else if (*format == 'd')
+{
+int value = va_arg(countargs, int);
+print_int(value);
+i += count(value);
+}
 else if (*format == '%')
 {
 putchar('%');
