@@ -36,6 +36,7 @@ i++;
 else if (*format == '%')
 {
 putchar('%');
+putchar('%');
 }
 }
 else
