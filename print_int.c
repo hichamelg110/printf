@@ -1,5 +1,5 @@
 /**
- *print_number - print string
+ *print_number - a function that print string 
  *@num : The number we want to convert to strig
  *Return: number character printed
  */
