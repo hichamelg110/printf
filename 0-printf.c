@@ -4,7 +4,8 @@
  * @format: format string
  * Return: the number of characters printed
  */
-int _printf(const char *format, ...){
+int _printf(const char *format, ...)
+{
 int num = 0;
 va_list countargs;
 int i = 0;
@@ -50,7 +51,6 @@ putchar(*format);
 i++;
 }
 }
-
 va_end(countargs);
 return (i);
 }
