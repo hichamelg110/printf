@@ -8,6 +8,20 @@
 int _printf(const char *format, ...)
 {
 int i = 0;
+
+if (format == NULL)
+{
+putchar('(');
+putchar('n');
+putchar('u');
+putchar('l');
+putchar('l');
+putchar(')');
+putchar('\n');
+int count;
+for (i = 0; i < 7; i++)
+return (i);
+}
 va_list countargs;
 va_start(countargs, format);
 
