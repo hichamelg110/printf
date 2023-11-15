@@ -13,9 +13,10 @@ if (str == NULL)
 {
 return (-1);
 }
-for (; *str != '\0'; str++)
+while (*str != '\0')
 {
 putchar(*str);
+str++;
 i++;
 }
 return (i);
